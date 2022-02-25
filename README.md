@@ -3,7 +3,7 @@
 ## Installazioni: 
 
 ```
-npx create-react-app react-exercise-tif --template typescript
+npx create-react-app esercizi-react --template typescript
 cd react-exercise-tif
 npm start
 ```
