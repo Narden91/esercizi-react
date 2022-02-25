@@ -1,0 +1,74 @@
+The Innovation Factory - Allenamento a casa con React
+
+Esercizi da fare a casa con React, mettendo in pratica quello 
+che è stato visto durante i primi 3 giorni di corso.
+
+-------------------------------------------------------------------------------
+1) Say hi!
+
+Realizza un componente Hello con una controlled form.
+Questa form dovrà contenere 2 campi di input e un bottone per la sottomissione.
+
+Al click del bottone, un allert dovrebbe apparire sullo schermo presentando un 
+messaggio di saluto contenente i valori inseriti nei campi di input sopra menzionati.
+
+Esempio: 
+
+Valore campo 1: Eduard
+
+Valore campo 2: Capanu
+
+Risultato: 
+
+'Ciao Eduard Capanu!'
+
+-------------------------------------------------------------------------------
+2) Render me nicely
+
+Crea un componente UserList in cui all'inizio del suo ciclo di vita va a fare 
+una retrive di una lista di utenti.
+
+L'API da chiamare si trova sul sito https://jsonplaceholder.typicode.com/ ed è relativa agli users.
+
+L'API è: https://jsonplaceholder.typicode.com/users
+
+Salvare il risultato all'interno del stato del componente e renderizzare una lista 
+contenente per ogni utente le seguenti informazioni: name, email e il company name.
+
+OPTIONAL: All'interno del componente UserList, creare un componente figlio UserListItem
+per renderizzare il div contenente il nome dell'utente.
+Passare poi a quel componente 2 proprietà.
+
+La prima sarà la label, il nome dell'utente quindi, la seconda invece, sarà una callback che 
+scatterà al click sul div con il nome.
+
+Questa callback si chiamerà setUserActive e dovrà dire al padre che l'elemento clickato è ora attivo.
+
+Il padre dovrà poi dare un colore diverso a quell'item.
+
+-------------------------------------------------------------------------------
+3) Let's filter some things!
+
+Partendo dal componente creato prima, UserList, si dovrà creare un campo di input 
+che andrà a filtrare la lista degli utenti in base al valore inserito.
+
+Il valore del campo di input dovrà fare un confronto con la proprietà name dell'oggetto User.
+
+Esempio: 
+
+Lista con valori:
+Mario / Sara / Simone / Luca / Alessandro
+
+Se all'interno del campo di input scrivo 'Alessandro', dovrò visualizzare solamente il suo elemento.
+
+OPTIONAL: sarebbe ottimo se il filtro funzionasse con 'contains' e non sull 'uguale'.
+Quindi scrivendo 'S' mi dovrei trovare sia 'Sara' che 'Simone'.
+
+Note:
+Se non si è riusciti a completare l'esercizio 2, e quindi non si dispone di una lista retrievata, 
+si puo' usare una statica creata in memoria.
+Partendo quindi da una variabile con un array di oggetti.
+
+-------------------------------------------------------------------------------
+Created by
+Eduard Capanu (https://www.linkedin.com/in/eduardcapanu/) in collaboration with The Innovation Factory (https://www.theinnovationfactory.it/it/).
